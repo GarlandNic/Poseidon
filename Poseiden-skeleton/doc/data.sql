@@ -1,4 +1,9 @@
 
+DROP DATABASE IF EXISTS demoPoseidon;
+
+create database demoPoseidon;
+use demoPoseidon;
+
 CREATE TABLE BidList (
   BidListId tinyint(4) NOT NULL AUTO_INCREMENT,
   account VARCHAR(30) NOT NULL,

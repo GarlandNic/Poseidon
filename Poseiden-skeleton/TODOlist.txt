@@ -2,27 +2,29 @@
 # en cours :
 	- tester via interface web pour BidList
 	: ça ne marche pas car demande de login
+	- tester via interface web pour CurvePoint
+	- tester via interface web pour Rating
 
 # To Do list :
 
- o CRUD (domain - controller - service) pour CurvePoint 
-	- tests unitaires pour CRUD CurvePoint
-	- tester via interface web pour CurvePoint
- o CRUD (domain - controller - service) pour Rating 
-	- tests unitaires pour CRUD Rating
-	- tester via interface web pour Rating
- o CRUD (domain - controller - service) pour RuleName 
-	- tests unitaires pour CRUD RuleName
 	- tester via interface web pour RuleName
- o CRUD (domain - controller - service) pour Trade 
-	- tests unitaires pour CRUD Trade
 	- tester via interface web pour Trade
  o CRUD (domain - controller - service) pour User : déjà fait ?? 
-	- tests unitaires pour CRUD User
+	- tests unitaires pour CRUD User : pas à faire ??
 	- tester via interface web pour User
 
 # Done list :
 
  o CRUD (domain - controller - service) pour BidList 
 	- tests unitaires pour CRUD BidList (complétion de ce qui est fourni)
- 
+ o CRUD (domain - controller - service) pour CurvePoint 
+	- tests unitaires pour CRUD CurvePoint
+ o CRUD (domain - controller - service) pour Rating 
+	- tests unitaires pour CRUD Rating
+ o CRUD (domain - controller - service) pour RuleName 
+	- tests unitaires pour CRUD RuleName
+ o CRUD (domain - controller - service) pour Trade 
+	- tests unitaires pour CRUD Trade
+	
+	
+	

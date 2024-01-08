@@ -19,6 +19,19 @@ public class Rating {
 	private String fitchRating;
 	private Integer orderNumber;
 	
+	public Rating(String moodys, String sand, String fitch, int order) {
+		this.moodysRating = moodys;
+		this.sandPRating = sand;
+		this.fitchRating = fitch;
+		this.orderNumber = order;
+	}
+	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public String getMoodysRating() {
 		return moodysRating;
 	}

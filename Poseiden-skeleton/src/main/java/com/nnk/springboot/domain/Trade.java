@@ -34,6 +34,17 @@ public class Trade {
     private String sourceListId;
 	private String side;
 	
+	public Trade(String account, String type) {
+		this.account = account;
+		this.type = type;
+	}
+	
+	public Integer getTradeId() {
+		return tradeId;
+	}
+	public void setTradeId(Integer id) {
+		this.tradeId = id;
+	}
 	public String getAccount() {
 		return account;
 	}

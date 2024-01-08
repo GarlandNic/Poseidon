@@ -19,6 +19,21 @@ public class RuleName {
 	private String sqlStr;
 	private String sqlPart;
 	
+	public RuleName(String name, String description, String json, String template, String sqlStr, String sqlPart) {
+		this.name = name;
+		this.description = description;
+		this.json = json;
+		this.template = template;
+		this.sqlStr = sqlStr;
+		this.sqlPart = sqlPart;
+	}
+	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}

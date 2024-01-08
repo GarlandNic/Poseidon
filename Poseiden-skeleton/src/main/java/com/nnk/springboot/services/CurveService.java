@@ -20,16 +20,16 @@ public class CurveService {
 		return curveRepo.findAll();
 	}
 
-	public void save(@Valid CurvePoint bid) {
-		curveRepo.save(bid);
+	public void save(@Valid CurvePoint curvePoint) {
+		curveRepo.save(curvePoint);
 	}
 
 	public Optional<CurvePoint> findById(Integer id) {
 		return curveRepo.findById(id);
 	}
 
-	public void delete(CurvePoint bid) {
-		curveRepo.delete(bid);
+	public void delete(CurvePoint curvePoint) {
+		curveRepo.delete(curvePoint);
 	}
 
 }

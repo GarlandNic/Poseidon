@@ -5,7 +5,6 @@
 
 # To Do list :
 
-	- tests unitaires pour CRUD BidList
  o CRUD (domain - controller - service) pour CurvePoint 
 	- tests unitaires pour CRUD CurvePoint
 	- tester via interface web pour CurvePoint
@@ -25,4 +24,5 @@
 # Done list :
 
  o CRUD (domain - controller - service) pour BidList 
+	- tests unitaires pour CRUD BidList (complétion de ce qui est fourni)
  

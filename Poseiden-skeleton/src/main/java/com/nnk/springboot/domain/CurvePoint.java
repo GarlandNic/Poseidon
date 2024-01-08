@@ -22,8 +22,20 @@ public class CurvePoint {
 	private Double value;
 	private Timestamp creationDate;
 	
+	public CurvePoint(int i, double term, double val) {
+		this.curveId = i;
+		this.term = term;
+		this.value = val;
+	}
+	
 	public Integer getCurveId() {
 		return curveId;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public Integer getId() {
+		return id;
 	}
 	public void setCurveId(Integer curveId) {
 		this.curveId = curveId;

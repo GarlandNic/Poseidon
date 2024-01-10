@@ -18,7 +18,9 @@ public class CurvePoint {
 
 	private Integer curveId;
 	private Timestamp asOfDate;
+    @NotBlank(message = "Term is mandatory")
 	private Double term;
+    @NotBlank(message = "Value is mandatory")
 	private Double value;
 	private Timestamp creationDate;
 	

@@ -1,8 +1,12 @@
 package com.nnk.springboot.domain;
 
 import jakarta.persistence.*;
+
+import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 import java.sql.Date;
 import java.sql.Timestamp;
 
@@ -18,7 +22,9 @@ public class BidList {
 	private String account;
     @NotBlank(message = "Type is mandatory")
 	private String type;
-    @NotBlank(message = "Bid quantity is mandatory")
+    @NotNull(message = "Bid quantity is mandatory")
+    @DecimalMin(value = "0.0", inclusive = false, message = "Bid quantity must be positive")
+    @Digits(integer=10, fraction=2, message = "Bid quantity must be a number")
 	private Double bidQuantity;
 	private Double askQuantity;
 	private Double bid;

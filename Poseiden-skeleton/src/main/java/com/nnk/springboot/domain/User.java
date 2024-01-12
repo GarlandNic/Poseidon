@@ -12,6 +12,7 @@ public class User {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
+    
     @NotBlank(message = "Username is mandatory")
     private String username;
     
@@ -20,8 +21,10 @@ public class User {
     @Size(min = 8, message = "Password must be at least 8 characters long")
     @NotBlank(message = "Password is mandatory")
     private String password;
+    
     @NotBlank(message = "FullName is mandatory")
     private String fullname;
+    
     @NotBlank(message = "Role is mandatory")
     private String role;
 

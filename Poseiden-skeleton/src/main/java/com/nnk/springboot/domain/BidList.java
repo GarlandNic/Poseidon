@@ -20,12 +20,15 @@ public class BidList {
 	
     @NotBlank(message = "Account is mandatory")
 	private String account;
+    
     @NotBlank(message = "Type is mandatory")
 	private String type;
+    
     @NotNull(message = "Bid quantity is mandatory")
     @DecimalMin(value = "0.0", inclusive = false, message = "Bid quantity must be positive")
     @Digits(integer=10, fraction=2, message = "Bid quantity must be a number")
 	private Double bidQuantity;
+    
 	private Double askQuantity;
 	private Double bid;
 	private Double ask;

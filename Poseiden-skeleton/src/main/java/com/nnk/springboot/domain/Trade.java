@@ -20,12 +20,15 @@ public class Trade {
     
     @NotBlank(message = "Account is mandatory")
     private String account;
+    
     @NotBlank(message = "Type is mandatory")
     private String type;
+    
     @NotNull(message = "Buy quantity is mandatory")
     @DecimalMin(value = "0.0", inclusive = false, message = "Buy quantity must be positive")
     @Digits(integer=10, fraction=2, message = "Buy quantity must be a number")
     private Double buyQuantity;
+    
     private Double sellQuantity;
     private Double buyPrice;
     private Double sellPrice;

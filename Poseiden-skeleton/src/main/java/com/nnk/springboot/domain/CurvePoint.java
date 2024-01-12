@@ -21,14 +21,17 @@ public class CurvePoint {
 
 	private Integer curveId;
 	private Timestamp asOfDate;
+	
     @NotNull(message = "Term is mandatory")
     @DecimalMin(value = "0.0", inclusive = false, message = "Term must be positive")
     @Digits(integer=10, fraction=2, message = "Term must be a number")
 	private Double term;
+    
     @NotNull(message = "Value is mandatory")
     @DecimalMin(value = "0.0", inclusive = false, message = "Value must be positive")
     @Digits(integer=10, fraction=2, message = "Value must be a number")
 	private Double value;
+    
 	private Timestamp creationDate;
 	
 	public CurvePoint(int i, double term, double val) {

@@ -16,10 +16,13 @@ public class Rating {
 	
     @NotBlank(message = "Moodys Rating is mandatory")
 	private String moodysRating;
+    
     @NotBlank(message = "Sand PRating is mandatory")
 	private String sandPRating;
+    
     @NotBlank(message = "Fitch Rating is mandatory")
 	private String fitchRating;
+    
     @NotNull(message = "Order is mandatory")
 	private Integer orderNumber;
 	

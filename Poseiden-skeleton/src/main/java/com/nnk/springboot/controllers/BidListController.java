@@ -35,9 +35,9 @@ public class BidListController {
     }
 
     @PostMapping("/bidList/validate")
-    public String validate(@Valid BidList bid, BindingResult result, Model model) {
+    public String validate(@Valid BidList bidList, BindingResult result, Model model) {
         if (!result.hasErrors()) {
-            bidListServ.save(bid);            
+            bidListServ.save(bidList);            
             return "redirect:/bidList/list";
         }
         return "bidList/add";

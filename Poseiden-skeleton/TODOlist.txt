@@ -25,6 +25,7 @@
 	- tests unitaires pour CRUD RuleName
  o CRUD (domain - controller - service) pour Trade 
 	- tests unitaires pour CRUD Trade
+ o mettre en place les contrainte de validité des champs
 	
 	
 	

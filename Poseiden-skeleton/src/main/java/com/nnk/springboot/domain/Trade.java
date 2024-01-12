@@ -1,14 +1,19 @@
 package com.nnk.springboot.domain;
 
 import jakarta.persistence.*;
+
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 import java.sql.Timestamp;
 
 
 @Entity
 @Table(name = "trade")
 public class Trade {
-    // TODO: Map columns in data table TRADE with corresponding java fields
+
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
 	private Integer tradeId;
@@ -17,7 +22,9 @@ public class Trade {
     private String account;
     @NotBlank(message = "Type is mandatory")
     private String type;
-    @NotBlank(message = "Buy Quantity is mandatory")
+    @NotNull(message = "Buy quantity is mandatory")
+    @DecimalMin(value = "0.0", inclusive = false, message = "Buy quantity must be positive")
+    @Digits(integer=10, fraction=2, message = "Buy quantity must be a number")
     private Double buyQuantity;
     private Double sellQuantity;
     private Double buyPrice;

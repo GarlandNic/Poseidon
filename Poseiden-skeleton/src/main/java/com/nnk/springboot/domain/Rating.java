@@ -9,7 +9,7 @@ import java.sql.Timestamp;
 @Entity
 @Table(name = "rating")
 public class Rating {
-    // TODO: Map columns in data table RATING with corresponding java fields
+
 	@Id
     @GeneratedValue(strategy= GenerationType.AUTO)
 	private Integer id;
@@ -20,7 +20,7 @@ public class Rating {
 	private String sandPRating;
     @NotBlank(message = "Fitch Rating is mandatory")
 	private String fitchRating;
-    @NotBlank(message = "Order is mandatory")
+    @NotNull(message = "Order is mandatory")
 	private Integer orderNumber;
 	
 	public Rating(String moodys, String sand, String fitch, int order) {

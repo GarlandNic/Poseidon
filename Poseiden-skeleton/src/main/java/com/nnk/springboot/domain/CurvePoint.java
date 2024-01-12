@@ -3,6 +3,9 @@ package com.nnk.springboot.domain;
 import org.hibernate.validator.constraints.Length;
 
 import jakarta.persistence.*;
+
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.sql.Timestamp;
@@ -11,16 +14,20 @@ import java.sql.Timestamp;
 @Entity
 @Table(name = "curvepoint")
 public class CurvePoint {
-    // TODO: Map columns in data table CURVEPOINT with corresponding java fields
+
 	@Id
     @GeneratedValue(strategy= GenerationType.AUTO)
 	private Integer id;
 
 	private Integer curveId;
 	private Timestamp asOfDate;
-    @NotBlank(message = "Term is mandatory")
+    @NotNull(message = "Term is mandatory")
+    @DecimalMin(value = "0.0", inclusive = false, message = "Term must be positive")
+    @Digits(integer=10, fraction=2, message = "Term must be a number")
 	private Double term;
-    @NotBlank(message = "Value is mandatory")
+    @NotNull(message = "Value is mandatory")
+    @DecimalMin(value = "0.0", inclusive = false, message = "Value must be positive")
+    @Digits(integer=10, fraction=2, message = "Value must be a number")
 	private Double value;
 	private Timestamp creationDate;
 	

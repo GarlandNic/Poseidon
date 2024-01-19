@@ -23,10 +23,10 @@ public class CustomUserDetailsService implements UserDetailsService {
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		Optional<User> user = userRepo.findByUsername(username);
+		Optional<com.nnk.springboot.domain.User> user = userRepo.findByUsername(username);
 		
 		if(user.isPresent()) {
-			return new User(user.get().getUsername(), user.get().getPassword(), getGrantedAuthorities("USER"));
+			return new User(user.get().getUsername(), user.get().getPassword(), getGrantedAuthorities(user.get().getRole()));
 		} else {
 			throw new UsernameNotFoundException("Invalide email or password");
 		}

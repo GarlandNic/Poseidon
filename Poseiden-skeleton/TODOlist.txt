@@ -1,5 +1,8 @@
 
 # en cours :
+
+ o mettre en place les contraintes de validité des champs
+	- tester via interface web pour User
 	- tester via interface web pour BidList
 	: ça ne marche pas car demande de login
 	- tester via interface web pour CurvePoint
@@ -8,10 +11,6 @@
 	- tester via interface web pour Trade
 
 # To Do list :
-
- o CRUD (domain - controller - service) pour User : déjà fait ?? 
-	- tests unitaires pour CRUD User : pas à faire ??
-	- tester via interface web pour User
 
 # Done list :
 
@@ -25,7 +24,9 @@
 	- tests unitaires pour CRUD RuleName
  o CRUD (domain - controller - service) pour Trade 
 	- tests unitaires pour CRUD Trade
- o mettre en place les contrainte de validité des champs
+ o CRUD (domain - controller - service) pour User : déjà fait ?? 
+	- tests unitaires pour CRUD User : pas à faire ??
+
 	
 	
 	

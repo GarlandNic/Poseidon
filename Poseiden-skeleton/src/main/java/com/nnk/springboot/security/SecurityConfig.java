@@ -25,15 +25,12 @@ public class SecurityConfig {
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 		http
 		.authorizeHttpRequests((requests) -> requests
-			.requestMatchers("/", "/home", "/error", "/user/*", "/favicon.ico").permitAll()
+			.requestMatchers("/", "/home", "/user/**", "/css/**").permitAll()
 			.requestMatchers("/admin").hasRole("ADMIN")
 			.anyRequest().authenticated()
 		)
-		.formLogin((form) -> form
-			.loginPage("/login")
-			.permitAll()
-		)
-		.logout((logout) -> logout.logoutUrl("/logout")
+		.formLogin(it -> {})
+		.logout((logout) -> logout.logoutUrl("/app-logout")
 				.clearAuthentication(true)
 				.invalidateHttpSession(true)
 				.permitAll())

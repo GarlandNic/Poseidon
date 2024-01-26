@@ -3,7 +3,6 @@
 
 o rating.orderNumber  ->  contrainte à revoir
  o mettre en place les contraintes de validité des champs
-	- tester via interface web pour Trade
 
 # To Do list :
 
@@ -29,6 +28,7 @@ o nettoyer le code
 	- tester via interface web pour Rating
 	- tester via interface web pour RuleName
 	- tester via interface web pour BidList
+	- tester via interface web pour Trade
 
 	
 	

@@ -53,7 +53,7 @@ public class TradeController {
         if (result.hasErrors()) {
             return "trade/update";
         }
-        trade.setId(id);
+        trade.setTradeId(id);
         tradeServ.save(trade);
         return "redirect:/trade/list";
     }

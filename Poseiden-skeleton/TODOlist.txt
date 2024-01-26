@@ -3,10 +3,12 @@
 
 o rating.orderNumber  ->  contrainte à revoir
  o mettre en place les contraintes de validité des champs
-	- tester via interface web pour BidList
 	- tester via interface web pour Trade
 
 # To Do list :
+
+o réviser les contraintes
+o nettoyer le code
 
 # Done list :
 
@@ -26,6 +28,7 @@ o rating.orderNumber  ->  contrainte à revoir
 	- tester via interface web pour CurvePoint
 	- tester via interface web pour Rating
 	- tester via interface web pour RuleName
+	- tester via interface web pour BidList
 
 	
 	

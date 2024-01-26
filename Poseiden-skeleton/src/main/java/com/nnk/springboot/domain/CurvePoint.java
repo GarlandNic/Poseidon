@@ -31,7 +31,9 @@ public class CurvePoint {
     
 	private Timestamp creationDate;
 	
-	public CurvePoint(int i, double term, double val) {
+	public CurvePoint() {}
+	
+	public CurvePoint(int i, double term, Double val) {
 		this.curveId = i;
 		this.term = term;
 		this.value = val;

@@ -1,13 +1,9 @@
 
 # en cours :
 
+o rating.orderNumber  ->  contrainte à revoir
  o mettre en place les contraintes de validité des champs
-	- tester via interface web pour User
 	- tester via interface web pour BidList
-	: ça ne marche pas car demande de login
-	- tester via interface web pour CurvePoint
-	- tester via interface web pour Rating
-	- tester via interface web pour RuleName
 	- tester via interface web pour Trade
 
 # To Do list :
@@ -26,6 +22,10 @@
 	- tests unitaires pour CRUD Trade
  o CRUD (domain - controller - service) pour User : déjà fait ?? 
 	- tests unitaires pour CRUD User : pas à faire ??
+	- tester via interface web pour User
+	- tester via interface web pour CurvePoint
+	- tester via interface web pour Rating
+	- tester via interface web pour RuleName
 
 	
 	

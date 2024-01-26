@@ -30,6 +30,8 @@ public class RuleName {
     @NotBlank(message = "SQL Part is mandatory")
 	private String sqlPart;
 	
+	public RuleName() {}
+	
 	public RuleName(String name, String description, String json, String template, String sqlStr, String sqlPart) {
 		this.name = name;
 		this.description = description;

@@ -14,7 +14,7 @@ public class User {
     @NotBlank(message = "Username is mandatory")
     private String username;
     
-    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$", 
+    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,}$", 
     		 message = "Password must contain at least 1 lowercase, 1 uppercase, 1 digit and 1 special character")
     @Size(min = 8, message = "Password must be at least 8 characters long")
     @NotBlank(message = "Password is mandatory")

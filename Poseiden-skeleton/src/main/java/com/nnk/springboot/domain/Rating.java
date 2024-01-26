@@ -25,7 +25,9 @@ public class Rating {
     @NotNull(message = "Order is mandatory")
 	private Integer orderNumber;
 	
-	public Rating(String moodys, String sand, String fitch, int order) {
+	public Rating() {}
+	
+	public Rating(String moodys, String sand, String fitch, Integer order) {
 		this.moodysRating = moodys;
 		this.sandPRating = sand;
 		this.fitchRating = fitch;

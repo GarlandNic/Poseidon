@@ -21,8 +21,6 @@ public class Trade {
     private String type;
     
     @NotNull(message = "Buy quantity is mandatory")
-    @DecimalMin(value = "0.0", inclusive = false, message = "Buy quantity must be positive")
-//    @Digits(integer=10, fraction=2, message = "Buy quantity must be a number")
     private Double buyQuantity;
     
     private Double sellQuantity;

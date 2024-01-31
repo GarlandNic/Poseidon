@@ -1,13 +1,17 @@
 
 # en cours :
 
-o rating.orderNumber  ->  contrainte à revoir
- o mettre en place les contraintes de validité des champs
+ o faire marcher les tests unitaires
+ o Documentez les méthodes des classes liées à la sécurité avec javadoc.
+
+Pour la prochaine fois, 
+	je vais nettoyer mon code, 
+	faire marcher les tests unitaires et 
+	documenter les méthodes des classes liées à la sécurité avec javadoc (c'est dans la liste des trucs demandés).
+
+
 
 # To Do list :
-
-o réviser les contraintes
-o nettoyer le code
 
 # Done list :
 
@@ -29,6 +33,8 @@ o nettoyer le code
 	- tester via interface web pour RuleName
 	- tester via interface web pour BidList
 	- tester via interface web pour Trade
+o rating.orderNumber  ->  contrainte à revoir
+ o mettre en place les contraintes de validité des champs
 
 	
 	

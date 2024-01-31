@@ -22,8 +22,6 @@ public class BidList {
 	private String type;
     
     @NotNull(message = "Bid quantity is mandatory")
-    @DecimalMin(value = "0.0", inclusive = false, message = "Bid quantity must be positive")
-//    @Digits(integer=10, fraction=2, message = "Bid quantity must be a number")
 	private Double bidQuantity;
     
 	private Double askQuantity;

@@ -9,8 +9,6 @@ Pour la prochaine fois,
 	faire marcher les tests unitaires et 
 	documenter les méthodes des classes liées à la sécurité avec javadoc (c'est dans la liste des trucs demandés).
 
-
-
 # To Do list :
 
 # Done list :

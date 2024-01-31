@@ -3,8 +3,6 @@ package com.nnk.springboot.domain;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 
-import java.sql.Timestamp;
-
 @Entity
 @Table(name = "rating")
 public class Rating {

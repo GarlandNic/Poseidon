@@ -1,7 +1,5 @@
 package com.nnk.springboot.domain;
 
-import org.hibernate.validator.constraints.Length;
-
 import jakarta.persistence.*;
 
 import jakarta.validation.constraints.*;

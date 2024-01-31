@@ -5,7 +5,6 @@ import jakarta.validation.constraints.*;
 
 import java.sql.Timestamp;
 
-
 @Entity
 @Table(name = "trade")
 public class Trade {

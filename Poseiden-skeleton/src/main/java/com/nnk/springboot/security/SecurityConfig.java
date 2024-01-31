@@ -21,6 +21,11 @@ public class SecurityConfig {
 	@Autowired
 	private CustomUserDetailsService userDetailsServ;
 
+    /**
+     * @param http
+     * @return
+     * @throws Exception
+     */
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 		http
@@ -41,16 +46,12 @@ public class SecurityConfig {
 		return http.build();
 	}
 	
+	/**
+	 * @return
+	 */
 	@Bean
 	PasswordEncoder passwordEncoder() {
 	    return new BCryptPasswordEncoder();
-	}
-	
-	@Bean
-	public AuthenticationManager authenticationManager(HttpSecurity http, BCryptPasswordEncoder bCryptPasswordEncoder) throws Exception {
-		AuthenticationManagerBuilder authenticationManagerBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);
-		authenticationManagerBuilder.userDetailsService(userDetailsServ).passwordEncoder(bCryptPasswordEncoder);
-		return authenticationManagerBuilder.build();
 	}
 	
 	@Bean

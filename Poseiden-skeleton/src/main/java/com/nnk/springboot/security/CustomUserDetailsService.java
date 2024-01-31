@@ -21,6 +21,9 @@ public class CustomUserDetailsService implements UserDetailsService {
 	@Autowired
 	private UserRepository userRepo;
 
+	/**
+	 *
+	 */
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		Optional<com.nnk.springboot.domain.User> user = userRepo.findByUsername(username);
@@ -32,6 +35,10 @@ public class CustomUserDetailsService implements UserDetailsService {
 		}
 	}
 
+	/**
+	 * @param role
+	 * @return
+	 */
 	private List<GrantedAuthority> getGrantedAuthorities(String role) {
 		List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
 		authorities.add(new SimpleGrantedAuthority("ROLE_" + role));

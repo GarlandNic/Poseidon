@@ -22,8 +22,10 @@ public class SecurityConfig {
 	private CustomUserDetailsService userDetailsServ;
 
     /**
-     * @param http
-     * @return
+     * In this function, we defined which pages can be acceded without authentification, how the logout is done, and how to memorize the user on her computer.
+     * Here we used the default login page, but it can be customized in this function.
+     * @param a HttpSecurity object (http)
+     * @return a SecurityFilterChain object
      * @throws Exception
      */
     @Bean
@@ -47,13 +49,19 @@ public class SecurityConfig {
 	}
 	
 	/**
-	 * @return
+	 * This function choose the way of encryption of the passwords.
+	 * @return a PasswordEncoder object
 	 */
 	@Bean
 	PasswordEncoder passwordEncoder() {
 	    return new BCryptPasswordEncoder();
 	}
 	
+	/**
+	 * This function define how the remember-me action must be done.
+	 * @param a CustomUserDetailsService object (which implement UserDetailsService)
+	 * @return a RememberMeServices object
+	 */
 	@Bean
 	RememberMeServices rememberMeServices(CustomUserDetailsService userDetailsService) {
 		RememberMeTokenAlgorithm encodingAlgorithm = RememberMeTokenAlgorithm.SHA256;

@@ -5,7 +5,6 @@
  o Documentez les méthodes des classes liées à la sécurité avec javadoc.
 
 Pour la prochaine fois, 
-	je vais nettoyer mon code, 
 	faire marcher les tests unitaires et 
 	documenter les méthodes des classes liées à la sécurité avec javadoc (c'est dans la liste des trucs demandés).
 
@@ -33,6 +32,7 @@ Pour la prochaine fois,
 	- tester via interface web pour Trade
 o rating.orderNumber  ->  contrainte à revoir
  o mettre en place les contraintes de validité des champs
+	je vais nettoyer mon code, 
 
 	
 	

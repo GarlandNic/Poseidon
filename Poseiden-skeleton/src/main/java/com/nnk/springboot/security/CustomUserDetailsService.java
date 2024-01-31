@@ -21,8 +21,9 @@ public class CustomUserDetailsService implements UserDetailsService {
 	@Autowired
 	private UserRepository userRepo;
 
-	/**
-	 *
+	/** Override the default loadUserByUsername. Get the user from the Database from her username.
+	 * @param the username as a String
+	 * @return a UserDetails object
 	 */
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -36,8 +37,9 @@ public class CustomUserDetailsService implements UserDetailsService {
 	}
 
 	/**
-	 * @param role
-	 * @return
+	 * This function create the GrantedAuthority object from the role as a String.
+	 * @param the role (user/admin) as a String
+	 * @return a list with one GrantedAuthority object
 	 */
 	private List<GrantedAuthority> getGrantedAuthorities(String role) {
 		List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();

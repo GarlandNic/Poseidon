@@ -34,7 +34,7 @@ public class SecurityConfig {
 			.requestMatchers("/admin").hasRole("ADMIN")
 			.anyRequest().authenticated()
 		)
-		.formLogin(it -> {})
+		.formLogin((form) -> form.defaultSuccessUrl("/bidList/list", true))
 		.logout((logout) -> logout.logoutUrl("/app-logout")
 				.clearAuthentication(true)
 				.invalidateHttpSession(true)

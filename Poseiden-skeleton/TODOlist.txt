@@ -1,8 +1,6 @@
 
 # en cours :
 
- o faire marcher les tests unitaires
-
 # To Do list :
 
 # Done list :
@@ -29,7 +27,7 @@ o rating.orderNumber  ->  contrainte à revoir
  o mettre en place les contraintes de validité des champs
 	je vais nettoyer mon code, 
  o Documentez les méthodes des classes liées à la sécurité avec javadoc.
-
+ o faire marcher les tests unitaires
 	
 	
 	

@@ -1,10 +1,18 @@
-# spring-boot
+# Poseidon
 ## Technical:
 
 1. Spring Boot 3.1.0
 2. Java 17
 3. Thymeleaf
 4. Bootstrap v.4.3.1
+5. MySql 8.0
+6. (developped with Eclipse 4.25)
+
+## Setup for running
+1. Run sql script doc/data.sql to create table
+	- database is named demoPoseidon
+2. Update the database information in src/main/resources/application.properties by the credentials for your own database
+3. Run the application
 
 
 ## Setup with Intellij IDE
@@ -23,5 +31,5 @@
 3. Create controller class and place in package com.nnk.springboot.controllers
 
 ## Security
-1. Create user service to load user from  database and place in package com.nnk.springboot.services
-2. Add configuration class and place in package com.nnk.springboot.config
+1. Created user service to load user from  database and place in package com.nnk.springboot.services
+2. Added configuration class and place in package com.nnk.springboot.security
